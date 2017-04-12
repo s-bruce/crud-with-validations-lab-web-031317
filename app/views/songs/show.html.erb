@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1><%=@song.title%></h1>
+    <h2>Artist: <%=@song.artist_name%></h2>
+    <h2>Genre: <%=@song.genre%></h2>
+    <% if @song.released %>
+      <h2>Released: <%=@song.release_year%></h2>
+    <% end %>
+  </body>
+</html>
